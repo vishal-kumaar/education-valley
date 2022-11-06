@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Education Valley</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="./index.html"><img src="img/EduV.png" alt="Logo" /></a>
+        </div>
+        <div class="nav-items">
+          <div class="nav-item"><a href="#home">Home</a></div>
+          <div class="nav-item"><a href="#notes">Notes</a></div>
+          <div class="nav-item"><a href="#about">About</a></div>
+          <div class="nav-item"><a href="#contact">Contact</a></div>
+        </div>
+        <div class="search-area">
+          <div class="input">
+            <input type="text" placeholder="Which notes we can give you?" />
+          </div>
+          <button class="search-btn">
+            <img src="img/search_icon.svg" alt="" />
+          </button>
+        </div>
+        <div class="nav-buttons">
+          <a class="login-btn" href="#">Login</a>
+          <a class="signup-btn" href="#">Signup</a>
+        </div>
+        <div class="ham-burger">
+          <img src="./img/hamburger-menu-icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="ham-burger-nav">
+        <div class="ham-search-area">
+          <div class="input">
+            <input type="text" placeholder="Which notes we can give you?" />
+          </div>
+          <button class="ham-search-btn">
+            <img src="img/search_icon.svg" alt="" />
+          </button>
+        </div>
+        <div class="ham-nav-items">
+          <div class="nav-item"><a href="#home">Home</a></div>
+          <div class="nav-item"><a href="#notes">Notes</a></div>
+          <div class="nav-item"><a href="#about">About</a></div>
+          <div class="nav-item"><a href="#contact">Contact</a></div>
+        </div>
+        <div class="ham-nav-buttons">
+          <a class="login-btn" href="#">Login</a>
+          <a class="signup-btn" href="#">Signup</a>
+        </div>
+      </div>
+      <div id="home">
+        <div>
+          <h1>Welcome</h1>
+          <h3>Students</h3>
+        </div>
+        <div>
+          <img src="./img/student.png" alt="" />
+        </div>
+      </div>
+      <div id="notes">
+        <div class="notes-title">We are here with your notes</div>
+        <div class="notes-image">
+          <img src="./img/books.svg" alt="" />
+        </div>
+        <div class="download-notes">Find your notes here</div>
+        <form action="">
+          <div class="course-name">
+            <input type="text" placeholder="Enter the Course Name" />
+          </div>
+          <div class="semester">
+            <input type="text" placeholder="Enter the Semester" />
+          </div>
+          <div class="topic">
+            <input type="text" placeholder="Enter the Topic" />
+          </div>
+          <button type="submit">Download</button>
+        </form>
+        <div class="upload-notes">Do you have any notes?<br />Upload here.</div>
+        <form action="">
+          <div class="course-name">
+            <input type="text" placeholder="Enter the Course Name" />
+          </div>
+          <div class="semester">
+            <input type="text" placeholder="Enter the Semester" />
+          </div>
+          <div class="topic">
+            <input type="text" placeholder="Enter the Topic" />
+          </div>
+          <div class="file">
+            <input type="file" id="upload_notes" name="upload_notes" />
+          </div>
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+      <div id="about">
+        <div class="about-title">About Us</div>
+        We provide all types of courses notes with their respective subjects.
+        Our students always scores highest marks in their higher education. The
+        notes are directly provided by various college students and our backend
+        team verify them. Be assured with our notes. <br />
+        <div class="greeting">Happy Learning:)</div>
+      </div>
+      <div id="contact">
+        <div class="contact-title">Contact Us</div>
+        <form action="">
+          <div class="name">
+            <input type="text" name="" id="" placeholder="Enter Your Name" />
+          </div>
+          <div class="email">
+            <input type="email" name="" id="" placeholder="Enter Your Email" />
+          </div>
+          <div class="phone">
+            <input
+              type="number"
+              name=""
+              id=""
+              placeholder="Enter Your Phone Number"
+            />
+          </div>
+          <div class="query">
+            <textarea
+              rows="4"
+              cols="50"
+              placeholder="Please ask your query..."
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>Copyright &copy; Education Valley, 2022</footer>
+  </body>
+  <script src="./js/script.js"></script>
+</html>

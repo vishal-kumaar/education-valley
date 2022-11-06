@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Yeseva+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', serif;
+}
+
+
+
+/* Navbar */
+.navbar{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.logo img{
+    width: 5em;
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-item{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #25256a;
+    font-size: 17px;
+}
+
+.search-area{
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    width: 35rem;
+    border: 2px solid #000;
+    height: 2.5rem;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+.input input{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 2px transparent;
+    border-right: 2px transparent;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 33rem;
+    height: 2.5rem;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.input input::placeholder{
+    font-size: 16px;
+}
+
+.search-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search-btn img{
+    width: 1.5em;
+}
+
+.login-btn {
+    background-color: #1e1eac;
+    color: #fff;
+    padding: 7px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.signup-btn {
+    background-color: #008000;
+    color: #fff;
+    padding: 7px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.nav-buttons .login-btn:hover{
+    background-color: #3535c1;
+}
+.nav-buttons .signup-btn:hover{
+    background-color: #2f992f;
+}
+
+.ham-burger img{
+    display: none;
+    width: 2em;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.ham-burger-nav{
+    padding-top: 10px;
+    text-align: center;
+    display: none;
+    position: sticky;
+    top: 6em;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+
+.ham-search-area{
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    width: 35rem;
+    border: 2px solid #000;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 10px auto;
+}
+
+.ham-search-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ham-search-btn img{
+    width: 1.5em;
+}
+
+.ham-nav-items{
+    margin-bottom: 20px;
+}
+
+.ham-nav-buttons{
+    margin-bottom: 20px;
+}
+
+/* Home */
+#home{
+    background-color: #f4ffe5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1{
+    font-size: 8rem;
+    color: #000;
+    font-family: 'Yeseva One', cursive;
+}
+
+
+#home h3{
+    font-size: 5rem;
+    color: #000;
+}
+
+#home img{
+    width: 25em;
+}
+
+/* Notes */
+
+#notes{
+    margin-bottom: 50px;
+}
+
+.notes-title{
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.notes-image img{
+    width: 35em;
+    height: fit-content;
+    display: block;
+    margin: auto;
+}
+
+#notes .download-notes{
+    font-size: 3.2em;
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+}
+
+#notes form{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#notes form div input[type="text"]{
+    width: 25em;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 0.6em;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#notes form div input::placeholder{
+    font-size: 18px;
+}
+
+#notes form button{
+    font-size: 19px;
+    padding: 0.6em 4em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #eb54bc;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#notes form button:hover{
+    background-color: #c9349a;
+}
+
+#notes .upload-notes{
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+#notes .file input[type="file"]{
+    padding: 0.6em;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* About */
+#about{
+    font-size: 1.1em;
+    width: 70%;
+    margin: 0 auto 25px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#about .about-title{
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.greeting{
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* Contact Us */
+
+#contact{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contact .contact-title{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#contact form input{
+    width: 25em;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 0.6em;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact form textarea{
+    width: 25em;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0.6em;
+}
+
+#contact form button{
+    font-size: 19px;
+    padding: 0.6em 4em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #eb54bc;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1150px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .nav-items{
+        display: none;
+    }
+
+    .search-area{
+        display: none;
+    }
+
+    .nav-buttons{
+        display: none;
+    }
+    .ham-burger img{
+        display: block;
+    }
+    
+    #home{
+        padding-top: 1em;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .ham-search-area{
+        width: 15rem;
+    }
+
+    .input input{
+        width: 12em;
+    }
+    
+    #home h1{
+        font-size: 6em;
+    }
+
+    #home h3{
+        font-size: 4em;
+    }
+
+    #home img{
+        width: 22em;
+    }
+
+    .notes-image img{
+        width: 28em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #home h1{
+        font-size: 5em;
+    }
+
+    #home h3{
+        font-size: 3.3em;
+    }
+    .notes-title{
+        font-size: 2.8em;
+    }
+
+    .notes-image img{
+        width: 22em;
+    }
+
+    #notes .download-notes{
+        font-size: 2.3em;
+    }
+
+    #notes form div input[type="text"]{
+        width: 20em;
+    }
+
+    #contact form input{
+        width: 20em;
+    }
+    #contact form textarea{
+        width: 20em;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #home h1{
+        font-size: 4.5em;
+    }
+
+    #home h3{
+        font-size: 3em;
+    }
+    .notes-title{
+        font-size: 2.4em;
+    }
+
+    .notes-image img{
+        width: 17em;
+    }
+
+    #notes .download-notes{
+        font-size: 2em;
+    }
+    #notes .upload-notes{
+        font-size: 2.2em;
+    }
+
+    #notes form div input[type="text"]{
+        width: 17em;
+    }
+
+    #contact form input{
+        width: 17em;
+    }
+    #contact form textarea{
+        width: 17em;
+    }
+}
