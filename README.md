@@ -1,7 +1,7 @@
 ## ✨ Education Valley ✨
 **This is the college notes providing website template.**
 
-🔗 [Live Link](https://education-valley.netlify.app/)
+🔗 [Live Link](https://educationvalley.vercel.app/)
 
 <br>
 
